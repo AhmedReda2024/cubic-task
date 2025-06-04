@@ -10,7 +10,7 @@ export class BranchesService {
 
   getBranches(): Observable<any> {
     return this.httpClient.get(
-      'https://81.29.111.142:8085/CVM/CVMMobileAPIs/api/getBranches'
+      'http://81.29.111.142:8085/CVM/CVMMobileAPIs/api/getBranches'
     );
   }
 }

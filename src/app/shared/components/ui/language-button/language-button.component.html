@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup" class="card flex justify-between mb-6">
+  <p-select
+    formControlName="selectedLanguage"
+    [options]="languages"
+    optionLabel="name"
+    placeholder="{{ 'APP.SELECT_LANGUAGE' | translate }}"
+    class="w-full md:w-56"
+    (onChange)="change($event)"
+  />
+</form>

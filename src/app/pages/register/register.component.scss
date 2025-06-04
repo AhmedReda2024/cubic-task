@@ -1,0 +1,35 @@
+.register-img-section {
+  background-image: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/register-bg.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+:host ::ng-deep .no-default-icons {
+  .p-tree-toggler-icon,
+  .p-tree-icon,
+  .p-tree-toggler {
+    display: none !important;
+  }
+  .p-treenode-content {
+    padding-left: 0 !important;
+  }
+}
+
+.branch-menu {
+  border-radius: 16px;
+}
+.p-select:not(.p-disabled) {
+  border-width: 2px;
+}
+.p-select:not(.p-disabled).p-focus {
+  border-color: #e5e7eb;
+}
+
+.p-select:not(.p-disabled) {
+  border-color: #e5e7eb;
+}
+.p-select:not(.p-disabled):hover {
+  border-color: #e5e7eb;
+}

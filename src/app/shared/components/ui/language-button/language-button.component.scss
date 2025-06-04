@@ -1,0 +1,13 @@
+.p-select:not(.p-disabled) {
+  border-width: 2px;
+}
+.p-select:not(.p-disabled).p-focus {
+  border-color: #e5e7eb;
+}
+
+.p-select:not(.p-disabled) {
+  border-color: #e5e7eb;
+}
+.p-select:not(.p-disabled):hover {
+  border-color: #e5e7eb;
+}

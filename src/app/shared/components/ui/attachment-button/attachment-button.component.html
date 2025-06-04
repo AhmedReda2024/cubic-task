@@ -1,0 +1,50 @@
+<!-- Drop Zone Container -->
+<div
+  class="border-2 border-dashed rounded p-6 text-center cursor-pointer"
+  (click)="fileInput.click()"
+  (dragover)="onDragOver($event)"
+  (dragleave)="onDragLeave($event)"
+  (drop)="onDrop($event)"
+>
+  <p class="text-gray-600">
+    {{ "APP.UPLOAD_HINT" | translate }}
+  </p>
+
+  <!-- Hidden file input to select folders manually -->
+  <input
+    #fileInput
+    type="file"
+    multiple
+    hidden
+    accept="image/*"
+    (change)="onFileSelect($event)"
+  />
+</div>
+
+<!-- PrimeNG Tree View -->
+<div class="max-h-96 overflow-y-auto pr-2">
+  <p-tree
+    [value]="treeData"
+    styleClass="no-default-icons"
+    [emptyMessage]="'APP.EMPTY_MESSAGE' | translate"
+  >
+    <ng-template let-node pTemplate="default">
+      <div class="flex items-center gap-2">
+        <span>{{ node.label }}</span>
+      </div>
+
+      <!-- Image preview  -->
+      @if (node.data?.previewUrl) {
+
+      <div class="mt-2">
+        <img
+          [src]="node.data.previewUrl"
+          alt="{{ node.label }}"
+          class="w-24 h-24 object-cover rounded shadow"
+        />
+      </div>
+
+      }
+    </ng-template>
+  </p-tree>
+</div>

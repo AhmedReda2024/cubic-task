@@ -1,0 +1,16 @@
+{
+  "APP": {
+    "TITLE": "Simple App",
+    "SUBTITLE": "The simplest app to use",
+    "GET_STARTED": "Get Started",
+    "REGISTER_NOW": "Register Now!",
+    "FULL_NAME": "Full Name",
+    "EMAIL": "Email Address",
+    "PHONE": "Phone Number",
+    "PREFERRED_BRANCH": "Preferred branch",
+    "UPLOAD_HINT": "Click or drag folders/images here to upload",
+    "SELECT_LANGUAGE": "Select a Language",
+    "REGISTER": "Register",
+    "EMPTY_MESSAGE": "No folders or files found"
+  }
+}

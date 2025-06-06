@@ -1,7 +1,0 @@
-{
-  "/CVM": {
-    "target": "http://81.29.111.142:8085",
-    "secure": false,
-    "changeOrigin": true
-  }
-}
